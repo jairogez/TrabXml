@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT scope (topicRef)>
+<!ELEMENT topic ((instanceOf, baseName, occurrence*) | (subjectIdentity?, baseName+))>
+<!ATTLIST topic
+	id CDATA #REQUIRED
+>
+<!ELEMENT member (topicRef)>
+<!ELEMENT baseName (scope?, baseNameString)>
+<!ELEMENT topicMap (topic+, association+)>
+<!ELEMENT topicRef EMPTY>
+<!ATTLIST topicRef
+	href CDATA #REQUIRED
+>
+<!ELEMENT instanceOf (topicRef)>
+<!ELEMENT occurrence ((scope, resourceData) | (instanceOf, resourceRef))>
+<!ELEMENT association (instanceOf, member+)>
+<!ELEMENT resourceRef EMPTY>
+<!ATTLIST resourceRef
+	href CDATA #REQUIRED
+>
+<!ELEMENT resourceData (#PCDATA)>
+<!ELEMENT baseNameString (#PCDATA)>
+<!ELEMENT subjectIdentity (subjectIndicatorRef)>
+<!ELEMENT subjectIndicatorRef EMPTY>
+<!ATTLIST subjectIndicatorRef
+	href CDATA #FIXED "#firstTopic"
+>

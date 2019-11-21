@@ -1,0 +1,16 @@
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\TrabXml.exe.config
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\TrabXml.exe
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\TrabXml.pdb
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\saxon9he-api.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\IKVM.OpenJDK.XML.API.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\saxon9he.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\IKVM.OpenJDK.Core.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\IKVM.Runtime.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\IKVM.OpenJDK.Text.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\IKVM.OpenJDK.Charsets.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\IKVM.OpenJDK.Util.dll
+C:\Users\reina\source\repos\TrabXml\TrabXml\bin\Debug\saxon9he-api.xml
+C:\Users\reina\source\repos\TrabXml\TrabXml\obj\Debug\TrabXml.csprojResolveAssemblyReference.cache
+C:\Users\reina\source\repos\TrabXml\TrabXml\obj\Debug\TrabXml.csproj.CoreCompileInputs.cache
+C:\Users\reina\source\repos\TrabXml\TrabXml\obj\Debug\TrabXml.exe
+C:\Users\reina\source\repos\TrabXml\TrabXml\obj\Debug\TrabXml.pdb

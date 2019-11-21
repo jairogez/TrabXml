@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="topicMap">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="topic" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:choice>
+							<xs:sequence>
+								<xs:element name="instanceOf">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="topicRef">
+												<xs:complexType>
+													<xs:attribute name="href" type="xs:string" use="required"/>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="baseName" type="baseName"/>
+								<xs:element name="occurrence" minOccurs="0" maxOccurs="unbounded">
+									<xs:complexType>
+										<xs:choice>
+											<xs:sequence>
+												<xs:element name="scope">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="topicRef">
+																<xs:complexType>
+																	<xs:attribute name="href" type="xs:string" use="required"/>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="resourceData" type="xs:string"/>
+											</xs:sequence>
+											<xs:sequence>
+												<xs:element name="instanceOf">
+													<xs:complexType>
+														<xs:sequence>
+															<xs:element name="topicRef">
+																<xs:complexType>
+																	<xs:attribute name="href" type="xs:string" use="required"/>
+																</xs:complexType>
+															</xs:element>
+														</xs:sequence>
+													</xs:complexType>
+												</xs:element>
+												<xs:element name="resourceRef">
+													<xs:complexType>
+														<xs:attribute name="href" type="xs:string" use="required"/>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+										</xs:choice>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+							<xs:sequence>
+								<xs:element name="subjectIdentity" minOccurs="0">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="subjectIndicatorRef">
+												<xs:complexType>
+													<xs:attribute name="href" type="xs:string" use="required"/>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="baseName" type="baseName" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:choice>
+						<xs:attribute name="id" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="association" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="instanceOf">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="topicRef">
+											<xs:complexType>
+												<xs:attribute name="href" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="member" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="topicRef">
+											<xs:complexType>
+												<xs:attribute name="href" type="xs:string" use="required"/>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="baseName">
+		<xs:sequence>
+			<xs:element name="scope" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="topicRef">
+							<xs:complexType>
+								<xs:attribute name="href" type="xs:string" use="required"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="baseNameString" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
